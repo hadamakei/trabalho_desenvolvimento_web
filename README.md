@@ -5,7 +5,7 @@
 Este projeto tem objetivo educacional. Faz parte da disciplina de Ferramentas de desenvolvimento web do curso de Análise de Desenvolvimento de Sistemas da UNINTER. Os objetivos propostos foram:
 
 - 📖 Desenvolver uma página somente com HTML e CSS
-- 📖  Utilizar 4 links internos 
+- 📖  Utilizar 4 links internos (Sobre/ Formação Educacional/ Portifólio/ Contato)
 - 📖  Fazer a parte visual de um formulário
 - 📖  Realizar o deploy em um provedor de hospedagem
 
