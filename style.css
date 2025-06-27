@@ -1,0 +1,296 @@
+/*
+****** LIMPAR FORMATAÇÕES ******
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Formatação Header*/
+.container{
+    display: grid;
+}
+
+header, footer{
+    grid-column-start: 1;
+    grid-column-end: 12;
+    background-color: lightslategrey;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Formatação Menu*/
+.menu{
+    grid-column-start: 6;
+    grid-column-end: 12;
+    justify-content: center;
+    padding: 8px 16px;
+   
+}
+
+/* Formatação links */
+
+ul{
+    list-style-type: none;
+    color: #506e6a;
+    
+     
+}
+
+a,
+a:link{
+    text-decoration: none;
+    padding: 8px 16px;
+    color:black
+}
+
+li{
+    float: left;
+   
+}
+
+a:hover{
+    background-color: lightslategrey;
+    color:#c4c4c4;
+    
+}
+
+a:visited{
+    text-decoration: dotted;
+
+}
+
+/* Formatação Body*/
+body{
+    font-size: 17px;
+    background-color: #c4c4c4;
+    font-family: 'Oranienbaum-regular', serif;
+    
+   
+}
+
+.oranienbaum-regular {
+  font-family: "Oranienbaum", serif;
+  font-weight: 400;
+  font-style: normal;
+  max-width: 20em;
+}
+
+
+.cor{
+    background-color: lightslategrey;
+     
+}
+
+h1, h2{
+    grid-column-start: 1;
+    grid-column-end: 12;
+    text-align: center;
+    padding: 30px;
+    margin: 20px;
+
+}
+
+p{
+    padding: 15px;
+}
+
+
+.imagem{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width: 200px;
+    padding: 15px;
+    border-radius: 500px;
+    margin: 10px 10px 35px 35px ;
+}
+
+.imagem:hover{
+    transform: scale(105%);
+}
+
+.conteudo {
+    grid-column-start: 4;
+    grid-column-end: 12;
+    padding-left: 30px;
+    padding-right: 50px;
+    text-align: justify;
+    line-height: 125%;
+    padding: 15px;
+    margin: 0 35px 35px;
+}
+
+#formacao{
+    padding: 15px;
+    margin: 15px;
+    line-height: 125%;
+}
+
+.lateral{
+    grid-column-start: 1;
+    grid-column-end: 6;
+    text-align: justify;
+    padding: 15px 20px;
+    margin: 15px 20px;
+}
+
+.direita{
+    grid-column-start: 7;
+    grid-column-end: 12;
+    text-align: justify;
+    padding: 15px 20px;
+    margin: 15px 20px;
+}
+
+.chamada{
+    grid-column-start: 1;
+    grid-column-end: 12;
+    text-align: center;
+    
+}
+
+h3{
+    padding: 15px;
+    margin: 15px;
+}
+
+.detalhes{
+    padding: 15px;
+    margin: 25px;
+}
+
+.alinhado{
+    float: left;
+    grid-column-start: 6;
+    padding: 15px 20px;
+    margin: 15px 20px;
+}
+
+/* Formatação Portifólio*/
+
+#portifolio {
+    line-height: 125%;
+}
+
+.descricao{
+    padding: 15px 30px;
+    margin: 15px 30px;
+}
+
+.logo{
+    border-radius: 20px;
+    margin: 10px;
+    
+}
+
+.logo:hover{
+    transform: scale(105%);
+    
+}
+
+.externo:hover{
+    background-color: #c4c4c4;
+    color:black;
+    border-radius: 50px;
+}
+
+
+
+/* Formatação Contato*/
+
+
+.formulario{
+    text-align: left;
+    padding: 10px 35px;
+    margin: 10px 35px;
+    
+}
+
+.submit{
+    border-radius: 50px;
+    width: 100px;
+    margin: 5px;
+    padding: 5px;
+    font-family: 'Oranienbaum-regular', serif;
+    font-size: 16px;
+}
+
+.submit:hover{
+    background-color:  lightslategray;
+    color: #c4c4c4;
+    transform: scale(1.0);
+}
+
+/* media query para dispositivos móveis */
+@media only screen and (max-width: 710px) {
+    body header{
+        font-size: 20px;
+        background-color: #c4c4c4;
+        
+    }
+
+    .conteudo  {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        
+    }
+
+    .container {
+        background-color: #c4c4c4;
+    }
+
+   #portifolio{
+        background-color: #c4c4c4;
+   } 
+
+
+   li {
+    float: none;
+   }
+
+   .detalhes{
+    padding: 0;
+    margin: 0;
+   }
+
+    footer  {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        background-color: #c4c4c4;
+    }
+
+    .imagem {
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
+
+    .chamada {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        text-align:center
+    }
+
+    .direita  {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        padding-right: 0;       
+    }
+
+    .logo {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        text-align: left;
+    }
+
+           
+    .linha {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1rem;  
+    }
+            
+    .textarea {
+        width: 350px;
+    }
+}
